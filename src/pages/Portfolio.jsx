@@ -32,7 +32,7 @@ function Portfolio() {
           <article className="portfolio-card">
             <img src={freshFood} alt="Fresh Food" />
             <div className="card-body">
-              <h2><strong>Fresh Food</strong></h2>
+              <h3><b>Fresh Food</b></h3>
               <p>Site de vente de produits frais en ligne</p>
               <button className="btn-primary">Voir le site</button>
             </div>
@@ -42,7 +42,7 @@ function Portfolio() {
           <article className="portfolio-card">
             <img src={restaurant} alt="Restaurant Akira" />
             <div className="card-body">
-              <h2><strong>Restaurant Akira</strong></h2>
+              <h3><b>Restaurant Akira</b></h3>
               <p>Site de vente de produits frais en ligne</p>
               <button className="btn-primary">Voir le site</button>
             </div>
@@ -52,7 +52,7 @@ function Portfolio() {
           <article className="portfolio-card">
             <img src={bienEtre} alt="Espace bien-être" />
             <div className="card-body">
-              <h2><strong>Espace bien-être</strong></h2>
+              <h3><b>Espace bien-être</b></h3>
               <p>Site de vente de produits frais en ligne</p>
               <button className="btn-primary">Voir le site</button>
             </div>
@@ -62,7 +62,7 @@ function Portfolio() {
           <article className="portfolio-card">
             <img src={seo} alt="SEO" />
             <div className="card-body">
-              <h2><strong>SEO</strong></h2>
+              <h3><b>SEO</b></h3>
               <p>Amélioration du référencement d’un site e-commerce</p>
               <button className="btn-primary">Voir le site</button>
             </div>
@@ -72,7 +72,7 @@ function Portfolio() {
           <article className="portfolio-card">
             <img src={api} alt="API" />
             <div className="card-body">
-              <h2><strong>Création d’une API</strong></h2>
+              <h3><b>Création d’une API</b></h3>
               <p>Création d’une API RESTFULL publique</p>
               <button className="btn-primary">Voir le site</button>
             </div>
@@ -82,7 +82,7 @@ function Portfolio() {
           <article className="portfolio-card">
             <img src={maquette} alt="Maquette site web" />
             <div className="card-body">
-              <h2><strong>Maquette d’un site web</strong></h2>
+              <h3><b>Maquette d’un site web</b></h3>
               <p>Création du prototype d’un site</p>
               <button className="btn-primary">Voir le site</button>
             </div>
