@@ -1,75 +1,97 @@
-import "./styles/Portfolio.css";
+import React from "react";
+import "../styles/Portfolio.css";
+import banner from "../assets/images/banner.jpg";
 
 import freshFood from "../assets/images/portfolio/fresh-food.jpg";
-import akira from "../assets/images/portfolio/restaurant-japonais.jpg";
+import restaurant from "../assets/images/portfolio/restaurant-japonais.jpg";
 import bienEtre from "../assets/images/portfolio/espace-bien-etre.jpg";
 import seo from "../assets/images/portfolio/seo.jpg";
 import api from "../assets/images/portfolio/coder.jpg";
 import maquette from "../assets/images/portfolio/screens.jpg";
 
 function Portfolio() {
-  const projects = [
-    {
-      img: freshFood,
-      title: "Fresh Food",
-      desc: "Site de vente de produits frais en ligne",
-      tech: "Site réalisé avec PHP et MySQL",
-    },
-    {
-      img: akira,
-      title: "Restaurant Akira",
-      desc: "Site de vente de produits frais en ligne",
-      tech: "Site réalisé avec WordPress",
-    },
-    {
-      img: bienEtre,
-      title: "Espace bien-être",
-      desc: "Site de vente de produits frais en ligne",
-      tech: "Site réalisé avec LARAVEL",
-    },
-    {
-      img: seo,
-      title: "SEO",
-      desc: "Amélioration du référencement d’un site e-commerce",
-      tech: "Utilisation des outils SEO",
-    },
-    {
-      img: api,
-      title: "Création d'une API",
-      desc: "Création d’une API RESTFULL publique",
-      tech: "PHP - SYMFONY",
-    },
-    {
-      img: maquette,
-      title: "Maquette d’un site web",
-      desc: "Création du prototype d’un site",
-      tech: "Réalisé avec FIGMA",
-    },
-  ];
-
   return (
-    <main className="portfolio-page">
-      <section className="portfolio-container">
-        <h1>Portfolio</h1>
-        <p className="subtitle">Voici quelques-unes de mes réalisations.</p>
-        <span className="blue-line"></span>
+    <main>
 
-        <div className="portfolio-grid">
-          {projects.map((project, index) => (
-            <article className="portfolio-card" key={index}>
-              <img src={project.img} alt={project.title} />
-              <div className="card-body">
-                <h2><strong>{project.title}</strong></h2>
-                <p>{project.desc}</p>
-                <button>Voir le site</button>
-              </div>
-              <div className="card-footer">
-                <p>{project.tech}</p>
-              </div>
-            </article>
-          ))}
+      {/* ===== HERO ===== */}
+      <section
+        className="portfolio-hero"
+        style={{ backgroundImage: `url(${banner})` }}
+      >
+        <div className="portfolio-hero-content">
+          <h1>Portfolio</h1>
+          <p>Voici quelques-unes de mes réalisations</p>
+          <span className="blue-line"></span>
         </div>
       </section>
+
+      {/* ===== CARDS ===== */}
+      <section className="portfolio-section">
+        <div className="portfolio-container">
+
+          <article className="portfolio-card">
+            <img src={freshFood} alt="Fresh Food" />
+            <div className="card-body">
+              <h2><strong>Fresh Food</strong></h2>
+              <p>Site de vente de produits frais en ligne</p>
+              <button className="btn-primary">Voir le site</button>
+            </div>
+            <div className="card-footer">Site réalisé avec PHP et MySQL</div>
+          </article>
+
+          <article className="portfolio-card">
+            <img src={restaurant} alt="Restaurant Akira" />
+            <div className="card-body">
+              <h2><strong>Restaurant Akira</strong></h2>
+              <p>Site de vente de produits frais en ligne</p>
+              <button className="btn-primary">Voir le site</button>
+            </div>
+            <div className="card-footer">Site réalisé avec WordPress</div>
+          </article>
+
+          <article className="portfolio-card">
+            <img src={bienEtre} alt="Espace bien-être" />
+            <div className="card-body">
+              <h2><strong>Espace bien-être</strong></h2>
+              <p>Site de vente de produits frais en ligne</p>
+              <button className="btn-primary">Voir le site</button>
+            </div>
+            <div className="card-footer">Site réalisé avec Laravel</div>
+          </article>
+
+          <article className="portfolio-card">
+            <img src={seo} alt="SEO" />
+            <div className="card-body">
+              <h2><strong>SEO</strong></h2>
+              <p>Amélioration du référencement d’un site e-commerce</p>
+              <button className="btn-primary">Voir le site</button>
+            </div>
+            <div className="card-footer">Utilisation des outils SEO</div>
+          </article>
+
+          <article className="portfolio-card">
+            <img src={api} alt="API" />
+            <div className="card-body">
+              <h2><strong>Création d’une API</strong></h2>
+              <p>Création d’une API RESTFULL publique</p>
+              <button className="btn-primary">Voir le site</button>
+            </div>
+            <div className="card-footer">PHP – Symfony</div>
+          </article>
+
+          <article className="portfolio-card">
+            <img src={maquette} alt="Maquette site web" />
+            <div className="card-body">
+              <h2><strong>Maquette d’un site web</strong></h2>
+              <p>Création du prototype d’un site</p>
+              <button className="btn-primary">Voir le site</button>
+            </div>
+            <div className="card-footer">Réalisé avec Figma</div>
+          </article>
+
+        </div>
+      </section>
+
     </main>
   );
 }

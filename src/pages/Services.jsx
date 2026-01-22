@@ -1,6 +1,6 @@
 import React from "react";
 import banner from "../assets/images/banner.jpg";
-import "./styles/Services.css";
+import "../styles/Services.css";
 
 function Services() {
   return (
