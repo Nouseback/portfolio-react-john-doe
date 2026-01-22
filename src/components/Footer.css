@@ -13,6 +13,16 @@
   gap: 30px;
 }
 
+.social-icons a {
+  color: #adb5bd;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.social-icons a:hover {
+  color: white;
+}
+
 .footer h4 {
   margin-bottom: 15px;
 }

@@ -14,7 +14,7 @@ function App() {
     <>
       <Header />
 
-      <main className="container my-4">
+      <main>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/services" element={<Services />} />
