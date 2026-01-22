@@ -1,4 +1,4 @@
-import "./Home.css";
+import "./styles/Home.css";
 import heroBg from "../assets/images/hero-bg.jpg";
 import aboutImg from "../assets/images/john-doe-about.jpg";
 
