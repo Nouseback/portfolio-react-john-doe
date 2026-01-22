@@ -1,44 +1,76 @@
+import React from "react";
+import banner from "../assets/images/banner.jpg";
+import "./Services.css";
+
 function Services() {
   return (
-    <main className="container my-5">
-      <h1>Mes services</h1>
+    <main>
 
-      <div className="row mt-4">
-        <div className="col-md-4 mb-4">
-          <article className="card h-100">
-            <div className="card-body">
-              <h2 className="card-title h5">Développement Front-End</h2>
-              <p className="card-text">
-                Création d’interfaces web modernes avec HTML, CSS, JavaScript et
-                React.
-              </p>
-            </div>
-          </article>
-        </div>
+      {/* IMAGE BANNER */}
+      <section
+        className="services-hero"
+        style={{ backgroundImage: `url(${banner})` }}
+      ></section>
 
-        <div className="col-md-4 mb-4">
-          <article className="card h-100">
-            <div className="card-body">
-              <h2 className="card-title h5">Responsive Design</h2>
-              <p className="card-text">
-                Adaptation des interfaces pour mobile, tablette et ordinateur.
-              </p>
-            </div>
-          </article>
-        </div>
+      {/* TITRE PAGE */}
+      <section className="services-header">
+        <h1>Mon offre de services</h1>
+        <p>Voici les prestations sur lesquelles je peux intervenir</p>
+        <span className="blue-line"></span>
+      </section>
 
-        <div className="col-md-4 mb-4">
-          <article className="card h-100">
-            <div className="card-body">
-              <h2 className="card-title h5">Intégration React</h2>
-              <p className="card-text">
-                Développement d’applications React avec une navigation fluide
-                et une structure maintenable.
-              </p>
-            </div>
-          </article>
+      {/* CARTES SERVICES */}
+      <section className="services-list container">
+        <div className="row justify-content-center">
+
+          {/* UX DESIGN */}
+          <div className="col-md-4 mb-4">
+            <article className="card service-card text-center">
+              <div className="card-body">
+                <i className="fas fa-paint-brush service-icon"></i>
+                <h2 className="h5"><strong>UX Design</strong></h2>
+                <p>
+                  L'UX Design consiste à concevoir des produits en plaçant
+                  l’utilisateur au centre des préoccupations afin de rendre
+                  l’expérience la plus fluide et agréable possible.
+                </p>
+              </div>
+            </article>
+          </div>
+
+          {/* DEVELOPPEMENT WEB */}
+          <div className="col-md-4 mb-4">
+            <article className="card service-card text-center">
+              <div className="card-body">
+                <i className="fas fa-code service-icon"></i>
+                <h2 className="h5"><strong>Développement web</strong></h2>
+                <p>
+                  Le développement web consiste à créer des sites et applications
+                  à l’aide de langages et frameworks modernes comme HTML, CSS,
+                  JavaScript, PHP, React ou Bootstrap.
+                </p>
+              </div>
+            </article>
+          </div>
+
+          {/* REFERENCEMENT */}
+          <div className="col-md-4 mb-4">
+            <article className="card service-card text-center">
+              <div className="card-body">
+                <i className="fas fa-search service-icon"></i>
+                <h2 className="h5"><strong>référencement</strong></h2>
+                <p>
+                  Le référencement naturel (SEO) permet d’optimiser la visibilité
+                  d’un site sur les moteurs de recherche afin d’attirer un
+                  maximum de visiteurs qualifiés.
+                </p>
+              </div>
+            </article>
+          </div>
+
         </div>
-      </div>
+      </section>
+
     </main>
   );
 }
