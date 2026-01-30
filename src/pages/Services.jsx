@@ -5,9 +5,7 @@ function Services() {
   return (
     <main>
       <section
-        className="services-hero"
-        style={{ backgroundImage: `url(${banner})` }}
-        aria-hidden="true"
+        className="services-hero"aria-hidden="true"
       ></section>
 
       <section className="services-header">

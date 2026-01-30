@@ -11,9 +11,7 @@ function Portfolio() {
   return (
     <main>
       <section
-        className="portfolio-banner"
-        style={{ backgroundImage: `url(${banner})` }}
-        aria-hidden="true"
+        className="portfolio-banner"aria-hidden="true"
       ></section>
 
       <section className="portfolio-title">

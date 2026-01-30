@@ -11,9 +11,7 @@ function Home() {
     <main>
       {/* HERO */}
       <section
-        className="hero"
-        style={{ backgroundImage: `url(${heroBg})` }}
-      >
+        className="hero">
         <div className="hero-content">
           <h1>Bonjour, je suis John Doe</h1>
           <h2>Développeur web full stack</h2>
